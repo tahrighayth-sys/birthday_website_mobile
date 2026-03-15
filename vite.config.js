@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/birthday_website_mobile/",
   build: {
-    outDir: './' // يخرّج الخدمة في الصفحة الرئيسية
+    outDir: './' 
   }
 })
