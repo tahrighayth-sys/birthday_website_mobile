@@ -1,21 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Home,Picture,Card,Cake,Present } from "./components"
-import './index.css'
+import React from 'react';
+import Home from './components/Home';
+import Card from './components/Card';
 
 function App() {
-
   return (
-    <Router>
-      <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/pictures" element={<Picture/>}/>
-          <Route path="/card" element={<Card/>}/>
-          <Route path="/cake" element={<Cake/>}/>
-          <Route path="/present" element={<Present/>}/>
-      </Routes>
-
-    </Router>
-  )
+    <div className="App">
+      <Home />
+      <div style={{padding: '20px'}}>
+        <Card />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
